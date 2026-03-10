@@ -1,0 +1,13 @@
+{
+  "name": "vehicle-surveillance-dashboard",
+  "version": "1.0.0",
+  "description": "Frontend dashboard for Surveillance Enhanced Vehicle Tracking System",
+  "private": true,
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "serve": "live-server --port=3000"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

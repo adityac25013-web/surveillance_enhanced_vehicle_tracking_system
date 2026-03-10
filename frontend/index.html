@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vehicle Surveillance Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <h1>Surveillance Enhanced Vehicle Tracking</h1>
+        <span class="status-dot" id="backend-status" title="Backend status"></span>
+      </header>
+
+      <main class="app-main">
+        <section class="panel panel-stream">
+          <div class="stream-header">
+            <h2>Live stream (webcam)</h2>
+            <span class="live-badge" id="live-badge">LIVE</span>
+          </div>
+          <div class="stream-wrap">
+            <img
+              id="video-stream"
+              src=""
+              alt="Live webcam with car detection"
+              crossorigin="anonymous"
+            />
+            <div class="stream-placeholder" id="stream-placeholder">
+              Loading…
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Health</h2>
+          <button id="ping-backend">Ping Backend</button>
+          <pre id="health-result">{ }</pre>
+        </section>
+
+        <section class="panel panel-detections">
+          <h2>Detected vehicles (real time)</h2>
+          <div id="detections-list" class="detections-list">Waiting for data…</div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+  </html>
+
